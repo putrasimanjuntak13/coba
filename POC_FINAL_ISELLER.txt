@@ -2,6 +2,13 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+		"deploymentGroup": {
+			"defaultValue": "xxx",
+            "type": "String",
+            "metadata": {
+                "description": "deployment group name."
+            }
+        },
         "adminUsername": {
             "type": "String",
             "metadata": {
@@ -16,7 +23,7 @@
             }
         },
         "dnsLabelPrefix": {
-            "defaultValue": "9869575874674",
+            "defaultValue": "jakef8249728",
             "type": "String",
             "metadata": {
                 "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
